@@ -44,7 +44,7 @@ public class SignUpServlet extends HttpServlet {
             }
         }
 
-        resp.sendRedirect("/");
+        resp.sendRedirect("/main");
     }
 
 }
