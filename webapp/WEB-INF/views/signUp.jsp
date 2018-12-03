@@ -10,8 +10,8 @@
     패스워드 <input type="password" name="password" placeholder="*******" required="required"><br>
     패스워드 확인 <input type="password" name="checkPassowrd" placeholder="*******" required="required"><br>
     <div id="checkPwd">동일한 암호를 입력하세요.</div><br>
-    <input type="submit" name="회원가입">
-    <button onclick="location.href='/'">취소</button>
+    <input type="submit">
+    <button onclick="location.href='/main'">취소</button>
 </form>
 
 
