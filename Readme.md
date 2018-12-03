@@ -14,6 +14,6 @@
 
 - Apache Tomcat
 
-- mysql
+- Mysql
 
 
