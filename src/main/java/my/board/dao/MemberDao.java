@@ -1,7 +1,7 @@
 package my.board.dao;
 
-import my.board.dao.DbUtil;
 import my.board.dto.MemberDto;
+
 import java.sql.*;
 
 public class MemberDao {
@@ -13,12 +13,12 @@ public class MemberDao {
         int result = 0;
         try {
 
-            String sql = "INSERT INTO MEMBER (nickname, password, email)" +
+            String sql = "INSERT INTO member (nickname, password, email)" +
                     "VALUES(?,?,?);";
             ps = conn.prepareStatement(sql);
-            ps.setString(1,memberDto.getNickname());
-            ps.setString(2,memberDto.getPassword());
-            ps.setString(3,memberDto.getEmail());
+            ps.setString(1, memberDto.getNickname());
+            ps.setString(2, memberDto.getPassword());
+            ps.setString(3, memberDto.getEmail());
             result = ps.executeUpdate();
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -27,5 +27,4 @@ public class MemberDao {
         }
         return result;
     }
-
 }
